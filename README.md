@@ -90,3 +90,7 @@
      $$
      \text{新持仓数量}_i = \frac{\text{组合价值}_{\text{调仓日}} \times \text{新权重}_i}{P_{i,\text{调仓日}}}
      $$
+
+### 结果
+基准1和基准2每日价值对比
+![1](./result/portfolio_values.png)
