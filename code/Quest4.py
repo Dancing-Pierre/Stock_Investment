@@ -1,9 +1,9 @@
 import pandas as pd
 
 # 读取股票日收盘数据
-data = pd.read_csv('stock_data.csv', index_col=0, parse_dates=True)
+data = pd.read_csv('../result/stock_data.csv', index_col=0, parse_dates=True)
 # 读取权重数据
-weights = pd.read_csv('strategy1_weights.csv', index_col=0, parse_dates=True)
+weights = pd.read_csv('../result/strategy1_weights.csv', index_col=0, parse_dates=True)
 
 # 初始化组合价值 DataFrame
 portfolio_values = pd.DataFrame(index=data.index, columns=['Strategy1', 'Benchmark'])
@@ -45,4 +45,4 @@ for i in range(1, len(weights)):
 portfolio_values.loc[rebalance_date:, 'Strategy1'] = (data.loc[rebalance_date:] * strategy1_shares).sum(axis=1)
 
 # 保存组合每日价值为CSV文件
-portfolio_values.to_csv('portfolio_values.csv')
+portfolio_values.to_csv('../result/portfolio_values.csv')

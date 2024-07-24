@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 读取组合每日价值
-portfolio_values = pd.read_csv('portfolio_values.csv', index_col=0, parse_dates=True)
+portfolio_values = pd.read_csv('../result/portfolio_values.csv', index_col=0, parse_dates=True)
 
 # 绘制图表
 plt.figure(figsize=(12, 6))
@@ -24,6 +24,6 @@ plt.legend()
 plt.grid(True)
 
 # 保存图表
-plt.savefig('portfolio_values.png')
+plt.savefig('../result/portfolio_values.png')
 # 图表显示
 plt.show()

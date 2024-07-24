@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 # 读取数据
-data = pd.read_csv('stock_data.csv', index_col=0, parse_dates=True)
+data = pd.read_csv('../result/stock_data.csv', index_col=0, parse_dates=True)
 
 # 计算每日收益率
 returns = data.pct_change().dropna()
@@ -47,4 +47,4 @@ for date in rebalancing_dates:
 # 重命名列名
 weights.rename(columns={'datedate': 'date', 'date600030': '600030', 'date600036': '600036'}, inplace=True)
 # 保存权重为CSV文件
-weights.to_csv('strategy1_weights.csv', index=False)
+weights.to_csv('../result/strategy1_weights.csv', index=False)
