@@ -42,6 +42,7 @@
      $$
      \sigma_i = \sqrt{\frac{1}{n-1} \sum_{t=1}^{n} (R_{i,t} - \bar{R_i})^2}
      $$
+   
      $$
      其中，  \bar{R_i}  是股票  i  的平均日收益率。
      $$
