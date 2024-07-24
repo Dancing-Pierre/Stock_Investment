@@ -66,7 +66,9 @@ $$
 
 $$
      w_1 = \frac{\sigma_2^2 - \rho_{12} \sigma_1 \sigma_2}{\sigma_1^2 + \sigma_2^2 - 2 \rho_{12} \sigma_1 \sigma_2}
-     
+$$
+  
+$$   
      w_2 = 1 - w_1
 $$
 
